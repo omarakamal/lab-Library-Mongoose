@@ -1,6 +1,6 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB | Express Mongoose Recipes
+# LAB | Library Mongoose
 
 <details>
   <summary>
@@ -106,7 +106,7 @@ const mongoose = require("mongoose");
 // app.js
 //...
 
-const MONGODB_URI = "mongodb://127.0.0.1:27017/express-mongoose-recipes-dev";
+const MONGODB_URI = "mongodb://127.0.0.1:27017/library-mongoose";
 
 mongoose
   .connect(MONGODB_URI)
@@ -167,7 +167,7 @@ add a new book using the methods we learned and console.log() the result. the bo
 
 
 
-### Iteration 4 | Add Many Recipes
+### Iteration 4 | Add Many Books
 
 Lets populate our database with some new books. Provided below is an array of books to be added to our datababse. Use a mongoose method to add all these books to our database:
 ```javascript
@@ -215,7 +215,7 @@ Lets populate our database with some new books. Provided below is an array of bo
 ];
 ```
 
-### Iteration 5 | Get All Recipes
+### Iteration 5 | Get All Books
 
 Get all the books from the database using the find method and console.log() the result of the .find() in the next .then()
 
@@ -248,7 +248,7 @@ let's update the value for our harry potter book. The book has gotten some impro
 
 ### Iteration 8 | Delete a Single Recipe
 
-Now that we have performed the creating, reading, and updating operations we need to write the code for deleting a book
+Now that we have performed the creating, reading, and updating operations we need to write the code for deleting a book. Delete the book with the title "The Hobbit"
 
 
 
