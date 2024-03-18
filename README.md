@@ -215,6 +215,9 @@ Lets populate our database with some new books. Provided below is an array of bo
 ];
 ```
 
+**Note:** Comment out this code once you are finished with this Iteration
+
+
 ### Iteration 5 | Get All Books
 
 Get all the books from the database using the find method and console.log() the result of the .find() in the next .then()
