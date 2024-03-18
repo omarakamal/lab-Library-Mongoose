@@ -170,7 +170,7 @@ add a new book using the methods we learned and console.log() the result. the bo
 ### Iteration 4 | Add Many Recipes
 
 Lets populate our database with some new books. Provided below is an array of books to be added to our datababse. Use a mongoose method to add all these books to our database:
-
+```javascript
 [
   {
     title: "The Great Gatsby",
@@ -213,8 +213,7 @@ Lets populate our database with some new books. Provided below is an array of bo
     isBestSeller: true
   }
 ];
-
-
+```
 
 ### Iteration 5 | Get All Recipes
 
