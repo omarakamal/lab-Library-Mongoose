@@ -130,7 +130,7 @@ Create a `Book` model inside of the file `/models/Book.model.js`. The schema sho
 - **author** - Type `String`. It should be *required*.
 - **pages** - Type `Number`. With a min value of 20 and max value of 1000
 - **cover** - Type `String`. Default value: _"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Open_book_nae_02.svg/800px-Open_book_nae_02.svg.png"_.
-- **genre** - Type `Array` of `String`s - represented as `[ String ]`.
+- **genres** - Type `Array` of `String`s - represented as `[ String ]`.
 - **isBestSeller** - Type `Boolean`. The default value should be `false`.
 <br>
 
@@ -144,47 +144,112 @@ Create a `Book` model inside of the file `/models/Book.model.js`. The schema sho
 
 <hr>
 
-### Iteration 3 | Create a Recipe
+### Iteration 3 | Create a Book
 
-Now that you have established the database connection and created the models, it's time to create the routes. We will start with the routes for the recepies collection.
+Now that you have established the database connection and created the models, it's time to create a new book.
 
-Create a new route `POST` `/recipes` that, upon request, *creates* a new recipe document in the database. See the instructions below on how to construct this route:
+add a new book using the methods we learned and console.log() the result. the book details are as follows:
+
+- **title** - Harry Potter and the Deathly Hallows.
+- **author** - JK Rowling.
+- **pages** - 607
+- **cover** - https://upload.wikimedia.org/wikipedia/en/a/a9/Harry_Potter_and_the_Deathly_Hallows.jpg
+- **genres** - ["Thriller","Mystery"].
+- **isBestSeller** - true.
+
+
+
+**Note:** Comment out this code once you are finished with this Iteration
+
+
+<hr>
+
+
+
+
+### Iteration 4 | Add Many Recipes
+
+Lets populate our database with some new books. Provided below is an array of books to be added to our datababse. Use a mongoose method to add all these books to our database:
+
+[
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    pages: 180,
+    cover: "https://example.com/greatgatsbycover.jpg",
+    genres: ["Classic", "Fiction"],
+    isBestSeller: true
+  },
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    pages: 281,
+    cover: "https://example.com/tokillamockingbirdcover.jpg",
+    genres: ["Classic", "Fiction", "Drama"],
+    isBestSeller: true
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    pages: 328,
+    cover: "https://example.com/1984cover.jpg",
+    genres: ["Classic", "Science Fiction", "Dystopian"],
+    isBestSeller: true
+  },
+  {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    pages: 300,
+    cover: "https://example.com/thehobbitcover.jpg",
+    genres: ["Fantasy", "Adventure"],
+    isBestSeller: true
+  },
+  {
+    title: "Harry Potter and the Philosopher's Stone",
+    author: "J.K. Rowling",
+    pages: 332,
+    cover: "https://example.com/harrypottercover.jpg",
+    genres: ["Fantasy", "Young Adult"],
+    isBestSeller: true
+  }
+];
+
+
+
+### Iteration 5 | Get All Recipes
+
+Get all the books from the database using the find method and console.log() the result of the .find() in the next .then()
+
 
 
 
 <hr>
 
-### Iteration 4 | Get All Recipes
+### Iteration 6 | Get a Single Book
 
-Create a new route `GET` `/recipes` that, upon request, *retrieves* all the recipe documents from the database. See instructions below for more details:
-
-
-
-
-<hr>
-
-### Iteration 5 | Get a Single Recipe
-
-Create a new route `GET` `/recipes/:id` that, upon request, *retrieves* a specified recipe document by its `_id` from the database. You can find the instructions for the route below:
-
+In iteration 3, we created a new book. Let's write the code for fetching this 1 book ("Harry Potter"). You can use any query you'd like to fetch this book. You can use either .findOne() or findById()
 
 
 
 
 <hr>
 
-### Iteration 6 | Update a Single Recipe
+### Iteration 7 | Update a Single Book
 
-Create a new route `PUT` `/recipes/:id` that, upon request, *updates* a specified recipe document in the database. See the instructions below on how to construct this route:
+let's update the value for our harry potter book. The book has gotten some improvements and now contains a new chapter. The new number of pages should be 750. Write the code to update the pages of the book with the new page numbers.
 
+**Note:** Comment out this code once you are finished with this Iteration
 
 
 
 <hr>
 
-### Iteration 7 | Delete a Single Recipe
 
-Create a new route `DELETE` `/recipes/:id` that, upon request, *deletes* a specified recipe document by its `_id` from the database. See the instructions below on how to construct this route:
+
+
+### Iteration 8 | Delete a Single Recipe
+
+Now that we have performed the creating, reading, and updating operations we need to write the code for deleting a book
 
 
 
