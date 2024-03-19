@@ -34,6 +34,52 @@ mongoose
 //   .catch((err) => console.log(err));
 
 //  Iteration 4 - Add Many Books
+// const newBooks = [
+//   {
+//     title: "The Great Gatsby",
+//     author: "F. Scott Fitzgerald",
+//     pages: 180,
+//     cover: "https://example.com/greatgatsbycover.jpg",
+//     genres: ["Classic", "Fiction"],
+//     isBestSeller: true,
+//   },
+//   {
+//     title: "To Kill a Mockingbird",
+//     author: "Harper Lee",
+//     pages: 281,
+//     cover: "https://example.com/tokillamockingbirdcover.jpg",
+//     genres: ["Classic", "Fiction", "Drama"],
+//     isBestSeller: true,
+//   },
+//   {
+//     title: "1984",
+//     author: "George Orwell",
+//     pages: 328,
+//     cover: "https://example.com/1984cover.jpg",
+//     genres: ["Classic", "Science Fiction", "Dystopian"],
+//     isBestSeller: true,
+//   },
+//   {
+//     title: "The Hobbit",
+//     author: "J.R.R. Tolkien",
+//     pages: 300,
+//     cover: "https://example.com/thehobbitcover.jpg",
+//     genres: ["Fantasy", "Adventure"],
+//     isBestSeller: true,
+//   },
+//   {
+//     title: "Harry Potter and the Philosopher's Stone",
+//     author: "J.K. Rowling",
+//     pages: 332,
+//     cover: "https://example.com/harrypottercover.jpg",
+//     genres: ["Fantasy", "Young Adult"],
+//     isBestSeller: true,
+//   },
+// ];
+
+// Book.create(...newBooks)
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
 //  Iteration 5 - Get All Recipes
 
