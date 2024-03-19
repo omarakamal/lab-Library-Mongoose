@@ -101,6 +101,9 @@ mongoose
 //   .catch((err) => console.log(err));
 
 //  Iteration 8 - Delete a Single Recipe
+// Book.deleteOne({ title: "The Hobbit" })
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
 // Start the server
 app.listen(5005, () => console.log("My first app listening on port 3000!"));
