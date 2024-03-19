@@ -11,6 +11,7 @@ app.use(express.json());
 // Iteration 1 - Connect to MongoDB
 // DATABASE CONNECTION
 const mongoose = require("mongoose");
+const Book = require("./models/Book.model");
 const MONGODB_URI = "mongodb://127.0.0.1:27017/library-mongoose";
 mongoose
   .connect(MONGODB_URI)
@@ -20,6 +21,17 @@ mongoose
   .catch((err) => console.error("Error connecting to mongo", err));
 
 //  Iteration 3 - Create a Book
+// Book.create({
+//   title: "Harry Potter and the Deathly Hallows",
+//   author: "JK Rowling",
+//   pages: 607,
+//   cover:
+//     "https://upload.wikimedia.org/wikipedia/en/a/a9/Harry_Potter_and_the_Deathly_Hallows.jpg",
+//   genres: ["Thriller", "Mystery"],
+//   isBestSeller: true,
+// })
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
 //  Iteration 4 - Add Many Books
 
