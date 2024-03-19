@@ -248,7 +248,7 @@ let's update the value for our harry potter book. The book has gotten some impro
 
 
 
-### Iteration 8 | Delete a Single Recipe
+### Iteration 8 | Delete a Single Book
 
 Now that we have performed the creating, reading, and updating operations we need to write the code for deleting a book. Delete the book with the title "The Hobbit"
 
