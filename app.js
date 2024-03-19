@@ -92,6 +92,13 @@ mongoose
 //   .catch((err) => console.log(err));
 
 //  Iteration 7 - Update a Single Book
+// Book.findOne({ title: { $regex: "Harry Potter", $options: "i" } })
+//   .then((book) => book)
+//   .then((book) =>
+//     Book.findOneAndUpdate({ _id: book._id }, { pages: 750 }, { new: true })
+//   )
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
 //  Iteration 8 - Delete a Single Recipe
 
