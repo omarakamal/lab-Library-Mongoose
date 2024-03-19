@@ -81,12 +81,15 @@ mongoose
 //   .then((res) => console.log(res))
 //   .catch((err) => console.log(err));
 
-//  Iteration 5 - Get All Recipes
-Book.find()
-  .then((res) => console.log(res))
-  .catch((err) => console.log(err));
+//  Iteration 5 - Get All Books
+// Book.find()
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
-//  Iteration 6 - Get a Single Book
+// //  Iteration 6 - Get a Single Book
+// Book.findOne({ title: { $regex: "Harry Potter", $options: "i" } })
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
 
 //  Iteration 7 - Update a Single Book
 
