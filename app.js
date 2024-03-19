@@ -82,6 +82,9 @@ mongoose
 //   .catch((err) => console.log(err));
 
 //  Iteration 5 - Get All Recipes
+Book.find()
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
 
 //  Iteration 6 - Get a Single Book
 
